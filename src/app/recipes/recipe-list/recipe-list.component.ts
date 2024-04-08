@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Recipe } from '../recipe.model';
 
 @Component({
@@ -19,6 +19,10 @@ export class RecipeListComponent {
       'https://www.budgetbytes.com/wp-content/uploads/2023/05/Pasta-Primavera-V3-800x1067.jpg'
     ),
   ];
+  @Output() recipeWasSelected = new EventEmitter<Recipe>();
   constructor() {}
   ngOnIt() {}
+  onRecipeSelected(recipe: Recipe) {
+    this.recipeWasSelected.emit(recipe);
+  }
 }
