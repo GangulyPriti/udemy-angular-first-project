@@ -2,3 +2,6 @@
 .btn {
   margin: 10px 10px 0 0;
 }
+a.custom_class {
+  cursor: pointer;
+}
