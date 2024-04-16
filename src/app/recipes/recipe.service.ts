@@ -9,16 +9,20 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     new Recipe(
-      'Tasty Schnitzel',
-      'A super-tasty Schnitzel - just awesome!',
-      'https://upload.wikimedia.org/wikipedia/commons/7/72/Schnitzel.JPG',
-      [new Ingredient('Meat', 1), new Ingredient('French Fries', 20)]
+      'Pan Seared Steak',
+      'Perfectly crusted, + a whole lot of flavor!',
+      'https://www.dontgobaconmyheart.co.uk/wp-content/uploads/2023/01/caesar-salad-crispy-chicken-1080x1256.jpg',
+      [new Ingredient('salad', 6), new Ingredient('croutons', 10)]
     ),
     new Recipe(
-      'Big Fat Burger',
-      'What else you need to say?',
-      'https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg',
-      [new Ingredient('Buns', 2), new Ingredient('Meat', 1)]
+      'Butternut Squash Soup',
+      'It’s surprisingly light yet satiating at the same time.',
+      'https://www.hsph.harvard.edu/nutritionsource/wp-content/uploads/sites/30/2015/11/Soup_Garnish_edited-1024x683.jpg',
+      [
+        new Ingredient('Medium leek', 2),
+        new Ingredient('Sprigs parsley', 5),
+        new Ingredient('Whole black peppercorns', 10),
+      ]
     ),
   ];
   constructor(private slService: ShoppingListService) {}
