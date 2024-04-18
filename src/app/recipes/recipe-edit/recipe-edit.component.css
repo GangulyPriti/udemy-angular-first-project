@@ -1,0 +1,6 @@
+.row.ingredient-row {
+  margin-bottom: 10px;
+}
+.form-control.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
