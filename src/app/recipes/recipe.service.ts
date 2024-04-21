@@ -39,7 +39,7 @@ export class RecipeService {
       ]
     ),
   ];
-
+  //extra recipe for form input
   extraRecipe = new Recipe(
     'Chicken Tikka Masala',
     'Chicken tikka masala made easy with this great-tasting recipe',
